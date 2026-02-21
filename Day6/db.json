@@ -1,0 +1,25 @@
+{
+  "goals": [
+    {
+      "id": 1,
+      "title": "Become a MERN Stack Developer",
+      "category": "Career",
+      "description": "Master MongoDB, Express, React, Node",
+      "status": "In Progress"
+    },
+    {
+      "id": 2,
+      "title": "Build 5 Real Projects",
+      "category": "Development",
+      "description": "Complete 5 full stack applications",
+      "status": "Not Started"
+    },
+    {
+      "id": 3,
+      "title": "Improve Fitness",
+      "category": "Personal",
+      "description": "Workout 5 days per week",
+      "status": "Ongoing"
+    }
+  ]
+}

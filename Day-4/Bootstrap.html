@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SUNDAR - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Nirmal Sankar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#academics">Academics</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="bg-light text-center py-5 mt-5">
+    <div class="container">
+        <h1 class="display-4 fw-bold">NIRMAL SANKAR</h1>
+        <p class="lead">
+            B.Tech CSE Student | Python Developer | DSA Enthusiast
+        </p>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="profile.jpg" alt="Profile picture of Nirmal Sankar" 
+                     class="img-fluid rounded-circle shadow" width="200">
+            </div>
+            <div class="col-md-8">
+                <p>
+                    I am a Computer Science Engineering student passionate about 
+                    software development and problem solving. 
+                    My goal is to build scalable systems that impact millions.
+                </p>
+                <div class="alert alert-info">
+                    <strong>Long-Term Goal:</strong> Become a software developer in a top tech company.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Skills</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Python Programming</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width: 85%">85%</div>
+                </div>
+
+                <h5>Data Structures</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-info" style="width: 75%">75%</div>
+                </div>
+
+                <h5>Web Development</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-warning" style="width: 70%">70%</div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Technical Skills</h5>
+                        <ul>
+                            <li>Data Structures & Algorithms</li>
+                            <li>Web Development</li>
+                            <li>Python</li>
+                            <li>Database Management</li>
+                        </ul>
+                        <h5>Hobbies</h5>
+                        <ul>
+                            <li>Reading Tech Blogs</li>
+                            <li>Playing Cricket</li>
+                            <li>Public Speaking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Academics Section -->
+<section id="academics" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Academic Records</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data Structures</td>
+                        <td>99</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Operating Systems</td>
+                        <td>99</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Database Systems</td>
+                        <td>99</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Computer Networks</td>
+                        <td>99</td>
+                        <td>A+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Preferred Contact Method</label>
+                        <select class="form-select">
+                            <option>Email</option>
+                            <option>Phone</option>
+                            <option>WhatsApp</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark w-100">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2026 Nirmal Sankar. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
