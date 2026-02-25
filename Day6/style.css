@@ -45,6 +45,48 @@ body {
   transition: all 0.4s ease;
 }
 
+/* Side-by-side layout for Books & Projects */
+.dual-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.dual-section .glass-card {
+  margin: 0;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 900px) {
+  .dual-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+.floating-add {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(to bottom, #3cc7f4, #1b9dd9);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.floating-add:hover {
+  transform: scale(1.1);
+}
+
 /* Border Glow Animation */
 .glass-card::before {
   content: "";
@@ -140,4 +182,39 @@ body {
   font-size: 0.85rem;
   display: none;
   z-index: 1000;
+}
+
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255,255,255,0.4);
+  border-radius: 20px;
+  padding: 40px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  animation: glow 4s linear infinite;
+}
+
+.modal input,
+.modal select {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.hidden {
+  display: none;
 }

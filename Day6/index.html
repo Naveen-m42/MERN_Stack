@@ -28,26 +28,22 @@
         <p>Become a Game Developer & Animator and build my own Game Dev Community.</p>
       </div>
 
-      <!-- Books -->
-      <div class="glass-card">
-        <h2>Books To Complete</h2>
-        <ul>
-          <li>Think Fast and Slow</li>
-          <li>The Alchemist</li>
-          <li>The Old Man and the Sea</li>
-          <li>To Kill a Mockingbird</li>
-        </ul>
-      </div>
+     <div class="dual-section">
 
-      <!-- Projects -->
-      <div class="glass-card">
-        <h2>Major Projects</h2>
-        <ul>
-          <li>Thrive Quotient</li>
-          <li>Digital Restaurant Menu</li>
-          <li>Bug Catcher (Godot Game)</li>
-          <li>Short Film - The Life</li>
-        </ul>
+        <!-- Books -->
+        <div class="glass-card">
+          <h2>Books To Complete</h2>
+          <ul id="booksList">
+          </ul>
+        </div>
+
+        <!-- Projects -->
+        <div class="glass-card">
+          <h2>Major Projects</h2>
+          <ul id="projectsList">
+          </ul>
+        </div>
+
       </div>
 
       <!-- Skills -->
@@ -57,6 +53,28 @@
         <p><strong>Improving:</strong> Art Skills, Storyboarding, Game Development</p>
         <p><strong>Core Game Dev Concepts:</strong> Composition, Game Art, Storyboarding</p>
       </div>
+
+      <div class="modal hidden" id="goalModal">
+  <div class="modal-content">
+    <h2>Add New Goal</h2>
+
+    <input type="text" id="newTitle" placeholder="Goal Title" />
+    
+   <select id="newType">
+  <option value="book">Book</option>
+  <option value="project">Project</option>
+  <option value="fitness">Fitness</option>
+  <option value="learning">Learning</option>
+  <option value="custom">Custom</option>
+</select>
+
+    <input type="date" id="newReminder" />
+
+   <button type="button" id="saveGoal">Save Goal</button>
+  </div>
+</div>
+
+      <div class="floating-add" id="addGoalBtn">+</div>
 
     </div> <!-- END goalsContent -->
 

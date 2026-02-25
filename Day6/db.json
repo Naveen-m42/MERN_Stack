@@ -1,25 +1,36 @@
 {
   "goals": [
     {
-      "id": 1,
-      "title": "Become a MERN Stack Developer",
-      "category": "Career",
-      "description": "Master MongoDB, Express, React, Node",
-      "status": "In Progress"
+      "id": "1",
+      "type": "book",
+      "title": "Think Fast and Slow",
+      "completed": true
     },
     {
-      "id": 2,
-      "title": "Build 5 Real Projects",
-      "category": "Development",
-      "description": "Complete 5 full stack applications",
-      "status": "Not Started"
+      "id": "2",
+      "type": "book",
+      "title": "The Alchemist",
+      "completed": false
     },
     {
-      "id": 3,
-      "title": "Improve Fitness",
-      "category": "Personal",
-      "description": "Workout 5 days per week",
-      "status": "Ongoing"
+      "id": "3",
+      "type": "project",
+      "title": "Thrive Quotient",
+      "completed": true
+    },
+    {
+      "id": "03f5",
+      "title": "WEF",
+      "type": "wef",
+      "reminder": "2026-02-06",
+      "completed": false
+    },
+    {
+      "id": "5bfe",
+      "title": "awrg",
+      "type": "awrg",
+      "reminder": "2026-02-10",
+      "completed": false
     }
   ]
 }
